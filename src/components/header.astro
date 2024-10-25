@@ -1,44 +1,45 @@
 <div class="flex items-center bg-[#0339A6] h-[70px] mr-2 ml-2 mt-2 rounded-2xl sticky top-0 z-10 shadow-custom">
-    <div class="flex w-[25%] pl-3">
-        <h1 class="text-white flex text-sm">Katherine Abigail Garcia Montano</h1>
-    </div>
+  <div class="flex w-[25%] pl-3">
+      <h1 class="text-white flex text-sm">Katherine Abigail Garcia Montano</h1>
+  </div>
 
-    <div class="flex h-[50px] w-[50%] items-center justify-center">
-        <h1 class="text-white flex text-3xl">Estructura de datos</h1>
-    </div>
+  <div class="flex h-[50px] w-[50%] items-center justify-center">
+      <h1 class="text-white flex text-3xl">Estructura de datos</h1>
+  </div>
 
-    <div class="flex w-[25%] items-center pr-3 space-x-4 justify-end text-sm">
-       
-        <nav class="relative">
-          <!-- Botón del menú -->
-          <button 
-            class="bg-[#4E8AD9] text-white px-4 py-2 rounded-md focus:outline-none"
-            id="menuButton"
-            aria-expanded="false"
-          >
-            Menú
-          </button>
-        
-          <!-- Menú desplegable -->
-          <div
-            id="dropdownMenu"
-            class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-custom transition-opacity duration-200 opacity-0 pointer-events-none "
-            aria-hidden="true"
-          >
-            <a href="#introduction" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Introduccion</a>
-            <a href="#stack" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Pilas</a>
-            <a href="#queues" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Colas</a>
-            <a href="#SimpleList" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Listas simplemente enlazadas</a>
-            <a href="#DoubleList" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Listas doublemente enlazadas</a>
-            <a href="#conclusions" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Conclusiones</a>
-          </div>
-        </nav>
+  <div class="flex w-[25%] items-center pr-3 space-x-4 justify-end text-sm">
+     
+      <nav class="relative">
+        <!-- Botón del menú -->
+        <button 
+          class="bg-[#4E8AD9] text-white px-4 py-2 rounded-md focus:outline-none"
+          id="menuButton"
+          aria-expanded="false"
+        >
+          Menú
+        </button>
+      
+        <!-- Menú desplegable -->
+        <div
+          id="dropdownMenu"
+          class="absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-custom transition-opacity duration-200 opacity-0 pointer-events-none "
+          aria-hidden="true"
+        >
+          <a href="#introduction" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Introduccion</a>
+          <a href="#stack" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Pilas</a>
+          <a href="#queues" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Colas</a>
+          <a href="#SimpleList" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Listas simplemente enlazadas</a>
+          <a href="#DoubleList" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Listas doblemente enlazadas</a>
+          <a href="#conclusions" class="block px-4 py-2 text-[#0339A6] hover:bg-gray-100">Conclusiones</a>
+        </div>
+      </nav>
 
-        <script>
-          document.addEventListener('DOMContentLoaded', function () {
-            const menuButton = document.getElementById("menuButton");
-            const dropdownMenu = document.getElementById("dropdownMenu");
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const menuButton = document.getElementById("menuButton");
+          const dropdownMenu = document.getElementById("dropdownMenu");
 
+          if (menuButton && dropdownMenu) {
             menuButton.addEventListener('click', function () {
               const isExpanded = dropdownMenu.classList.contains("opacity-100");
 
@@ -50,8 +51,9 @@
                 dropdownMenu.classList.add("opacity-100", "pointer-events-auto");
               }
             });
-          });
-        </script>
+          }
+        });
+      </script>
 
-    </div>
+  </div>
 </div>
